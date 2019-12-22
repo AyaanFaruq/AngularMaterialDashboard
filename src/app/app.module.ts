@@ -3,14 +3,39 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { GridListComponent } from './grid-list/grid-list.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TableComponent } from './table/table.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FormComponent } from './form/form.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridListComponent,
+    StepperComponent,
+    TabsComponent,
+    TableComponent,
+    SidebarComponent,
+    FormComponent,
+    ExpansionPanelComponent,
+    HeaderBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
